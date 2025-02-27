@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dynamic cab understand</title>
+</head>
+
+<body>
+  <h1 id="final-change">my practice</h1>
+  <input id="box-line" type="text">
+  <button id="change-name">push me and change</button>
+
+  <script>
+    document.getElementById('change-name').addEventListener('click', function () {
+      // Get the value from the input field
+      const changeAble = document.getElementById('box-line');
+      const changeAbles = changeAble.value;
+
+      // Get the <h1> element and update its text
+      const finalChange = document.getElementById('final-change');
+      finalChange.innerText = changeAbles;
+
+      // Optional: log to the console to see the value and changes
+      console.log('New Text: ', changeAbles);
+    });
+  </script>
+
+  <script src="dom.js"></script>
+</body>
+
+</html>
